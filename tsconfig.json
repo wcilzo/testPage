@@ -18,7 +18,7 @@
         "name": "next"
       }
     ],
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./*"],
     }
@@ -31,5 +31,9 @@
     "app/lib/placeholder-data.ts",
     "scripts/seed.js"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "baseUrl": ".", 
+  "paths": {
+    "@/app/*": ["app/*"]
+  }
 }
