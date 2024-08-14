@@ -1,7 +1,13 @@
 {
+  "name": "next-test",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wcilzo/testPage.git"
+  },
   "private": true,
   "scripts": {
-    "build": "next build",
+    "build": "next build && next export",
     "dev": "next dev",
     "start": "next start"
   },

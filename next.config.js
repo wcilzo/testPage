@@ -6,10 +6,10 @@ let assetPrefix = ``
 let basePath = `/`
 
 // const isGithubPage = process.env.NODE_ENV === 'gh'
-const isGithubActions = process.env.GIT_ACTIONS || false
+const isGithubActions = process.env.GITHUB_ACTIONS || false
 
 if (isGithubActions) {
-  const repo = process.env.GIT_REPOSITORY.replace(/.*?\//, '')
+  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
   assetPrefix = `/${repo}/`
   basePath = `/${repo}`
 }
