@@ -8,10 +8,10 @@ let assetPrefix = `/${repo}/`
 // 这在将应用部署到子目录下时特别有用，因为它允许您指定应用所在的目录
 let basePath = `/${repo}`
 
-const isGithubActions = process.env.GITHUB_ACTIONS || false
+const isGithubActions = process.env.GIT_ACTIONS || false
 
 if (isGithubActions) {
-  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
+  const repo = process.env.GIT_REPOSITORY.replace(/.*?\//, '')
   assetPrefix = `/${repo}/`
   basePath = `/${repo}`
 }
