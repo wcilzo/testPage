@@ -25,4 +25,4 @@ const nextConfig = {
   },
 }
 
-odule.exports = nextConfig
+module.exports = nextConfig
