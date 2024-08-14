@@ -1,4 +1,4 @@
-name: Actions CI - Next.js version 12 static site export, GitHub Actions Build and Deploy
+name: Actions CI - Next.js version xx static site export, GitHub Actions Build and Deploy
 on:
   push:
     branches: [ master ]
@@ -25,7 +25,7 @@ jobs:
       run: pnpm install
     - name: 打包 🏗️
       run: |
-        next build
+        pnpm run build
         touch out/.nojekyll
     - name: 部署 🚀
       uses: JamesIves/github-pages-deploy-action@v4
