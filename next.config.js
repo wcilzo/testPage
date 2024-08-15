@@ -15,13 +15,13 @@ if (isGithubActions) {
 }
 
 const nextConfig = {
-  output: 'export',
-  assetPrefix,
-  basePath,
-  reactStrictMode: true,
-  images: {
-    unoptimized: true,
-  },
+  // output: 'export',
+  // assetPrefix,
+  // basePath,
+  // reactStrictMode: true,
+  // images: {
+  //   unoptimized: true,
+  // },
 }
 
 module.exports = nextConfig
